@@ -1,0 +1,13 @@
+{
+  "name": "brighterscript-template",
+  "version": "1.0.0",
+  "description": "A Roku application written in BrighterScript",
+  "scripts": {
+    "build": "bsc",
+    "package": "bsc --create-package"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "brighterscript": "^0.15.1"
+  }
+}

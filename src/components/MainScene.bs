@@ -1,0 +1,8 @@
+sub init()
+    m.top.setFocus(true)
+    m.mainLabel = m.top.findNode("mainLabel")
+    'change the color
+    m.mainLabel.color = "0xFFFFFF"
+    'make the text really big 
+    m.mainLabel.font.size = 100
+end sub
