@@ -9,11 +9,12 @@
             "request": "launch",
             "name": "BrightScript Debug: Launch",
             "stopOnEntry": false,
-            "host": "${promptForHost}",
-            "password": "${promptForPassword}",
+            "host": "192.168.1.123",
+            "password": "1111",
             "rootDir": "${workspaceFolder}/dist",
             //run the BrighterScript build before each launch
             "preLaunchTask": "build",
+            "retainStagingFolder": false,
             "enableDebuggerAutoRecovery": false,
             "stopDebuggerOnAppExit": false
         }
