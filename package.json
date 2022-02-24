@@ -8,6 +8,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "brighterscript": "^0.43.0"
+    "brighterscript": "^0.45.2"
   }
 }
