@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A Roku application written in BrighterScript",
   "scripts": {
-    "build": "bsc",
+    "build": "bsc --createPackage=false",
+    "watch": "npm run build -- --watch",
     "package": "bsc --create-package"
   },
   "license": "MIT",

@@ -1,7 +1,4 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -9,11 +6,18 @@
             "request": "launch",
             "name": "BrightScript Debug: Launch",
             "stopOnEntry": false,
-            "host": "192.168.1.123",
-            "password": "1111",
             "rootDir": "${workspaceFolder}/dist",
             //run the BrighterScript build before each launch
-            "preLaunchTask": "build",
+            "preLaunchTask": "build"
+        },
+        {
+            "type": "brightscript",
+            "request": "launch",
+            "name": "BrightScript Debug: Launch (Watch)",
+            "stopOnEntry": false,
+            "rootDir": "${workspaceFolder}/dist",
+            //kick off the bsc watcher before launching
+            "preLaunchTask": "watch",
             "retainStagingFolder": false,
             "enableDebuggerAutoRecovery": false,
             "stopDebuggerOnAppExit": false

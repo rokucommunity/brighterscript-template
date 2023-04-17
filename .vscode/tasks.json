@@ -3,16 +3,19 @@
     "tasks": [
         {
             "label": "build",
-            "command": "npm",
+            "command": "npm run build",
             "type": "shell",
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "args": [
-                "run",
-                "build"
-            ]
+            }
+        },
+        {
+            "label": "watch",
+            "command": "npm run watch",
+            "type": "shell",
+            "isBackground": true,
+            "problemMatcher": "$bsc-watch-silent"
         }
     ]
 }
